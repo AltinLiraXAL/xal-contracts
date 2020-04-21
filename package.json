@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/altinlira/xal-contracts.git"
+    "url": "git+https://github.com/AltinLiraXAL/xal-contracts.git"
   },
   "author": "Ömür Gökyar | https://twitter.com/omurgokyar",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/altinlira/xal-contracts/issues"
+    "url": "https://github.com/AltinLiraXAL/xal-contracts/issues"
   },
-  "homepage": "https://github.com/altinlira/xal-contracts#readme",
+  "homepage": "https://github.com/AltinLiraXAL/xal-contracts#readme",
   "dependencies": {},
   "devDependencies": {
     "eth-sig-util": "^2.1.0",

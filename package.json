@@ -1,0 +1,44 @@
+{
+  "name": "xal",
+  "version": "0.0.1",
+  "description": "Altin Lira (XAL) is ERC20 based token",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "abi": "mkdir -p abi-out && solcjs --abi ./contracts/openzeppelin/SafeMath.sol ./contracts/AltinLiraXAL.sol -o ./abi-out && cp ./abi-out/__contracts_AltinLiraXAL_sol_AltinLiraXAL.abi ./AltinLiraXAL.abi",
+    "abiProxy": "mkdir -p abi-out && solcjs --abi ./contracts/openzeppelin/Proxy.sol ./contracts/openzeppelin/AddressUtils.sol ./contracts/openzeppelin/UpgradeabilityProxy.sol ./contracts/openzeppelin/AdminUpgradeabilityProxyXAL.sol -o ./abi-out && cp ./abi-out/__contracts_openzeppelin_AdminUpgradeabilityProxyXAL_sol_AdminUpgradeabilityProxyXAL.abi ./AdminUpgradeabilityProxyXAL.abi",
+    "compile": "truffle compile",
+    "coverage": "solidity-coverage",
+    "flatten-impl": "truffle-flattener ./contracts/AltinLiraXAL.sol > ./flattened/AltinLiraXAL.sol",
+    "flatten-proxy": "truffle-flattener ./contracts/openzeppelin/AdminUpgradeabilityProxyXAL.sol > ./flattened/AdminUpgradeabilityProxyXAL.sol",
+    "ganache": "ganache-cli",
+    "migrate": "truffle migrate",
+    "solium": "solium -d contracts/ --fix",
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altinlira/xal-contracts.git"
+  },
+  "author": "Ömür Gökyar | https://twitter.com/omurgokyar",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/altinlira/xal-contracts/issues"
+  },
+  "homepage": "https://github.com/altinlira/xal-contracts#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eth-sig-util": "^2.1.0",
+    "ganache-cli": "^6.1.2",
+    "openzeppelin-test-helpers": "^0.1.1",
+    "solc": "0.4.24",
+    "solidity-coverage": "^0.5.4",
+    "solium": "^1.1.8",
+    "truffle": "^5.0.0",
+    "truffle-flattener": "^1.2.6",
+    "@truffle/hdwallet-provider": "^1.0.28",
+    "zos-lib": "^2.1.0"
+  }
+}

@@ -1,7 +1,7 @@
 # ALTIN LIRA (XAL)
 Altın Lira (XAL), değeri gram altına endekslenmiş, Ethereum tabanlı, ERC20 Standartlarında bir Token Kontratıdır. Temel yapısı ve transfer protokolü, Ethereum blokzinciri içerisindeki Akıllı Kontrat (Smart Contract) protokolüne göre oluşturulmuştur. Ve Ethereum tabanlı cüzdanlarda saklanır.
 
-https://github.com/altinlira/xal-contracts/blob/master/whitepaper/xal-whitepaper-v1.pdf
+https://github.com/AltinLiraXAL/xal-contracts/blob/master/whitepaper/xal-whitepaper-v1.pdf
 
 ## ABI, Adres, and Verifikasyon
 

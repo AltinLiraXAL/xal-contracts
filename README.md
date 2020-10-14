@@ -104,3 +104,6 @@ Ve aşağıdaki kod çalıştırılır
 `make test-contracts`
 
 Coverage Raporu için, ayrıca `make test-contracts-coverage` kodu çalıştırılabilir.
+
+[![Build Status](https://github.com/AltinLiraXAL/xal-contracts/workflows/CI/badge.svg)](https://github.com/AltinLiraXAL/xal-contracts/actions)
+[![Coverage Status](https://coveralls.io/repos/github/AltinLiraXAL/xal-contracts/badge.svg?branch=master)](https://coveralls.io/github/AltinLiraXAL/xal-contracts?branch=master)

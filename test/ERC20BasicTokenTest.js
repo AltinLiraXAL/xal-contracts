@@ -21,7 +21,7 @@ contract('ERC20Basic XAL', function ([_, admin, recipient, anotherAccount, owner
       const name = await this.token.name();
       assert.equal(name, "ALTIN LIRA");
       const symbol = await this.token.symbol();
-      assert.equal(symbol, "XALt");
+      assert.equal(symbol, "XAL");
       const decimals = await this.token.decimals();
       assert.equal(decimals, 18);
     });

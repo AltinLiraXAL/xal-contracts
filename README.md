@@ -75,7 +75,7 @@ Yeni hesap teklifi onayladıktan hemen sonra owner olacaktır. Eğer bu yeni own
 
 ### Güncellenebilir Proxy
 
-Değişmez blokzincir yapısı içinde, güncellenebilir bir kontrat oluşturabilmek için, İki Sözleşmeli Yöntem kullanılmıştır. Bu yapı dahilinde, `delegatecall` kullanılarak, proxy storage dahilindeki temel kontrat kodu çalıştırılır. 
+Değişmez blokzincir yapısı içinde, güncellenebilir bir kontrat oluşturabilmek için, İki Sözleşmeli Yöntem kullanılmıştır. Bu yapı dahilinde, proxy storage içindeki temel kontrat kodu çalıştırılır. 
 
 Çalıştırılan yeni kontratın içindeki eski metod ve yapılar korunur ve değiştirilen yapı ve fonksiyonlar ise güncellenir. Bu sayede proxy kontrat bazında, esas kontrat adresi değişmeden, aynı ayarlara sahip ama daha güncel, hatalardan arındırılmış yeni bir entegre kontrat aktive edilebilir. Sonuçta, Blokzincir üzerinde hiçbir hata ve aksama olmadan güncelleme yapılmış olur.
 
@@ -84,7 +84,7 @@ https://github.com/OpenZeppelin/openzeppelin-sdk/tree/master/packages/lib/contra
 
 ## Güncelleme Süreci
 
-Entegre edilen kontrat non-admin mantığıyla kullanılmaktadır. Yeni entegre edilecek kontrat, proxy kontratındaki `upgradeTo()` yada `upgradeToAndCall()` metodlarından herhangi biriyle çağrılarak tamamen yeni yada kısmen güncellenmiş olarak eskisiyle birleştirilir.
+Entegre edilen kontrat non-admin mantığıyla kullanılmaktadır. Yeni entegre edilecek kontrat, proxy kontratındaki `upgradeTo()` metodu çağrılarak tamamen yeni yada kısmen güncellenmiş olarak eskisiyle birleştirilir.
 
 ## Bytecode Onayı
 

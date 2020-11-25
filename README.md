@@ -101,6 +101,6 @@ Başka bir terminal penceresi açılır.
 
 Ve aşağıdaki kod çalıştırılır
 
-`make test-contracts`
+`yarn test`
 
-Coverage Raporu için, ayrıca `make test-contracts-coverage` kodu çalıştırılabilir.
+Coverage Raporu için, ayrıca `yarn coverage` kodu çalıştırılabilir.
